@@ -1,0 +1,89 @@
+.publishers-container {
+  padding: 70px 200px;
+  font-size: 17px;
+  font-style: normal;
+  color: #345666;
+  width: 80%; /* Adjust this value to make the container wider or narrower */
+  max-width: 1200px; /* Optional: sets a maximum width */
+  margin: 0 auto; /* Centers the container */
+}
+
+button {
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Hide spinner arrows in number inputs */
+input[type="number"] {
+  /* Hide the spinner in most modern browsers */
+  -webkit-appearance: none; /* For WebKit-based browsers like Chrome and Safari */
+  -moz-appearance: textfield; /* For Firefox */
+  appearance: none; /* General rule for modern browsers */
+
+  /* Additional styling to ensure consistency */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Hide spinner arrows in older versions of Internet Explorer and Edge */
+input[type="number"]::-ms-expand {
+  display: none;
+}
+
+
+input:focus {
+  border-color: #4CAF50; /* Change border color on focus */
+  outline: none;
+}
+
+form button[type="submit"] {
+  background-color: #4CAF50; /* Green background */
+}
+
+form button[type="button"] {
+  background-color: #f44336; /* Red background for cancel */
+}
+
+form button[type="button"]:hover {
+  background-color: #e53935; /* Darker red on hover */
+}

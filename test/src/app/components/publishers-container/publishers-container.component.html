@@ -1,0 +1,24 @@
+<div class="publishers-container">
+    <div>
+      <button (click)="showAddPublisherForm()">Add Publisher</button>
+    </div>
+
+    <!-- Publisher Form -->
+  <form *ngIf="isPublisherFormVisible" [formGroup]="publisherForm" (ngSubmit)="addPublisher()">
+    <div>
+      <label for="publisherName">Publisher Name:</label>
+      <input id="publisherName" formControlName="publisherName" />
+    </div>
+    <button type="submit">submit</button>
+    <button type="button" (click)="cancelPublisherForm()">Cancel</button>
+  </form>
+
+    <div>
+        <app-publisher-card *ngFor="let publisher of publishers" 
+          [publisher]="publisher"
+          (publisherDeleted)="deletePublisher($event)">
+        </app-publisher-card>
+    </div>
+</div>
+
+
