@@ -13,7 +13,8 @@
 .publishers {
   position: absolute;
   width: 1640px;
-  height: 864px;
+  height: 100vh;
+  overflow: scroll;
   left: 280px;
   top: 89px;
   background: #F9F9F9;
@@ -24,5 +25,5 @@
   position: absolute;
   width: 155px;
   height: 30px;
-  background: url(/src/assets/logo.svg);
+  background: url('../assets/logo.svg') no-repeat;
 }
